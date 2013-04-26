@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/zhe/Code/faceahead'
-let g:netrw_dirhist_2='/home/zhe/Code/faceahead.github_old'
-let g:netrw_dirhist_3='/home/zhe/Code/faceahead'
-let g:netrw_dirhist_4='/home/zhe/Code/pinax_social'
-let g:netrw_dirhist_5='/home/zhe/Code/faceahead'
