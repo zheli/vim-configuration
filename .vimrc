@@ -39,12 +39,19 @@ set shiftwidth=4
 set softtabstop=4
 set autoindent
 set cursorline
+set ignorecase
+set smartcase
+set incsearch
 :syntax on
 filetype plugin indent on
 filetype plugin on
+"highlight cursorline
 :hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 :hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 :nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+au WinLeave * set nocursorline nocursorcolumn
+au WinEnter * set cursorline cursorcolumn
+set cursorline cursorcolumn
 "colorscheme satori
 set guioptions-=T
 "change background color to red for line that is longer than 80 chars
