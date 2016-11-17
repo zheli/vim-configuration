@@ -1,4 +1,5 @@
 call plug#begin('~/.vim/plugged')
+
 " Colors
 Plug 'https://github.com/altercation/vim-colors-solarized.git'
 " Syntax Check
@@ -8,6 +9,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
+
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -16,8 +18,10 @@ syntax enable " enable syntax support
 color solarized
 set wildmenu " show autocomplete options
 set wildmode=longest:full,full " set <tab> completion behavior
+set number " enable line number
 
 " FileType {
+
 filetype on " enable filetype detect
 
 " Neomake {
