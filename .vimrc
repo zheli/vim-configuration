@@ -14,6 +14,8 @@ call plug#end()
 " Interface
 syntax enable " enable syntax support
 color solarized
+set wildmenu " show autocomplete options
+set wildmode=longest:full,full " set <tab> completion behavior
 
 " FileType {
 filetype on " enable filetype detect
