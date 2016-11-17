@@ -3,6 +3,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'https://github.com/altercation/vim-colors-solarized.git'
 " Syntax Check
 Plug 'neomake/neomake'
+" Editing
+Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
 " Add plugins to &runtimepath
 call plug#end()
 
