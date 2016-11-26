@@ -2,16 +2,16 @@ call plug#begin('~/.vim/plugged')
 
 " ==Interface==
 " Statusbar
-Plug 'https://github.com/vim-airline/vim-airline.git'
-Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " Colors
-Plug 'https://github.com/altercation/vim-colors-solarized.git'
+Plug 'altercation/vim-colors-solarized'
 " Syntax Check
 Plug 'neomake/neomake'
 
 " ==Function===
 " Fuzzy file opener
-Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug 'ctrlpvim/ctrlp.vim'
 " Editing
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
