@@ -10,6 +10,8 @@ Plug 'https://github.com/altercation/vim-colors-solarized.git'
 Plug 'neomake/neomake'
 
 " ==Function===
+" Fuzzy file opener
+Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 " Editing
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
@@ -31,6 +33,16 @@ set laststatus=2 " always show statusline
 let g:airline_powerline_fonts = 1 " use powerline font
 let g:airline#extensions#tabline#enabled = 1 " Automatically displays all buffers when there's only one tab open.
 let g:airline_theme='papercolor'
+" }
+
+" CtrlP {
+let g:ctrlp_cmd = 'CtrlPMixed' " use CtrlPMixed mode
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\v[\/](node_modules|artifact)$',
+  \ 'file': '\.png$',
+  \ } " ignore node_modules and artifact folders, image files
+let g:ctrlp_show_hidden = 1 " show hidden files
 " }
 
 " FileType {
