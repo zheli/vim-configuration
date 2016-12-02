@@ -69,7 +69,7 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " CtrlP {
-let g:ctrlp_cmd = 'CtrlPMixed' " use CtrlPMixed mode
+let g:ctrlp_cmd = 'CtrlP' " use CtrlP mode
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\v[\/](node_modules|artifact)$',
