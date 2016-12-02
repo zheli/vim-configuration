@@ -36,11 +36,23 @@ color solarized
 set wildmenu " show autocomplete options
 set wildmode=longest:full,full " set <tab> completion behavior
 set number " enable line number
+set hlsearch " highlight all search matches
+
+"wrap line that is longer than 100
+set wrap
+set textwidth=100
+
+set colorcolumn=+1 "color text when length is over 100
+
+"highlight trailing whitespace
+:hi ExtraWhitespace ctermbg=red guibg=red
+call matchadd('ExtraWhitespace', '\s\+$', 11)
 
 " Airline {
 set laststatus=2 " always show statusline
 let g:airline_powerline_fonts = 1 " use powerline font
-let g:airline#extensions#tabline#enabled = 1 " Automatically displays all buffers when there's only one tab open.
+" Automatically displays all buffers when there's only one tab open
+let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='papercolor'
 " }
 
@@ -53,6 +65,10 @@ let NERDTreeQuitOnOpen=1 "auto close nerdtree
 " }
 
 " Editing {
+
+set smartcase " case insentive search if first letter is not capital
+
+" Shortcut keys {
 " Moving lines up and down with Alt-j and Alt-k
 " http://vim.wikia.com/wiki/Moving_lines_up_or_down
 " for Macs
@@ -88,9 +104,13 @@ let g:ctrlp_show_hidden = 1 " show hidden files
 
 filetype on " enable filetype detect
 
+" ignore list
+set wildignore=*.o,*~,*.pyc
+
 " Neomake {
 autocmd! BufWritePost * Neomake " run Neomake syntax check on the current file on every write
 let g:neomake_open_list=1       " open quickfix or list window when there is error
 " }
 
 " }
+" vim: noai:ts=4:sw=4
