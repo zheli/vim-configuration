@@ -24,6 +24,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
+" numbers.vim is a plugin for intelligently toggling line numbers
+Plug 'myusuf3/numbers.vim'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -67,6 +69,9 @@ inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
+" Switch between absolute and relative line number
+nnoremap <F3> :NumbersToggle<CR>
+"}
 
 " CtrlP {
 let g:ctrlp_cmd = 'CtrlP' " use CtrlP mode
