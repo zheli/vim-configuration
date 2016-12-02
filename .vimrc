@@ -5,7 +5,12 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Colors
+Plug 'adlawson/vim-sorcerer'
 Plug 'altercation/vim-colors-solarized'
+Plug 'easysid/mod8.vim'
+Plug 'freeo/vim-kalisi'
+Plug 'mhartington/oceanic-next'
+Plug 'scwood/vim-hybrid'
 " Nerdtree
 Plug 'scrooloose/nerdtree'
 " Syntax Check
