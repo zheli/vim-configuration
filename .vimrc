@@ -26,6 +26,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
+" Code Completion
+Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
 " numbers.vim is a plugin for intelligently toggling line numbers
 Plug 'myusuf3/numbers.vim'
 
@@ -100,6 +102,11 @@ let g:ctrlp_custom_ignore = {
   \ } " ignore node_modules and artifact folders, image files
 let g:ctrlp_show_hidden = 1 " show hidden files
 " }
+" YouCompleteMe {
+let g:ycm_key_list_select_completion = ['<C-j>']
+let g:ycm_key_list_previous_completion = ['<C-k>']
+" }
+
 " }
 
 " FileType {
