@@ -132,6 +132,46 @@ set wildignore=*.o,*~,*.pyc
 autocmd! BufWritePost * Neomake " run Neomake syntax check on the current file on every write
 let g:neomake_open_list=1       " open quickfix or list window when there is error
 " }
+" Helper functions {
+
+" New Command ToggleGstatus for switching Gstatus window on/off
+function! ToggleGStatus()
+    if buflisted(bufname('.git/index'))
+        bd .git/index
+    else
+        Gstatus
+    endif
+endfunction
+command ToggleGStatus :call ToggleGStatus()
+
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+" Close all open buffers on entering a window if the only
+" buffer that's left is the NERDTree buffer
+function! s:CloseIfOnlyNerdTreeLeft()
+  if exists("t:NERDTreeBufName")
+    if bufwinnr(t:NERDTreeBufName) != -1
+      if winnr("$") == 1
+        q
+      endif
+    endif
+  endif
+endfunction
+
+
+augroup vimrc_autocmd
+  autocmd!
+  " auto remove trailling whitespace on save
+  autocmd filetype c,cpp,java,php,ruby,python,php,vimrc,javascript autocmd bufwritepre <buffer> :call <sid>StripTrailingWhitespaces()
+  " auto close when only nerdtree is left
+  autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+augroup end
+" }
 
 " }
 " vim: noai:ts=4:sw=4
