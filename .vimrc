@@ -7,10 +7,12 @@ Plug 'vim-airline/vim-airline-themes'
 " Colors
 Plug 'adlawson/vim-sorcerer'
 Plug 'altercation/vim-colors-solarized'
+Plug 'antlypls/vim-colors-codeschool'
 Plug 'easysid/mod8.vim'
 Plug 'freeo/vim-kalisi'
 Plug 'mhartington/oceanic-next'
 Plug 'scwood/vim-hybrid'
+Plug 'Suave/vim-colors-guardian'
 " Nerdtree
 Plug 'scrooloose/nerdtree'
 " Syntax Check
@@ -32,7 +34,7 @@ call plug#end()
 
 " Interface
 syntax enable " enable syntax support
-color solarized
+color sorcerer
 set wildmenu " show autocomplete options
 set wildmode=longest:full,full " set <tab> completion behavior
 set number " enable line number
