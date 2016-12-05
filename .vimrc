@@ -37,8 +37,11 @@ Plug 'tpope/vim-unimpaired'
 Plug 'https://github.com/godlygeek/tabular.git' " make text into column
 " Code Completion
 Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
-" numbers.vim is a plugin for intelligently toggling line numbers
-Plug 'myusuf3/numbers.vim'
+
+" Filetypes
+"
+"  YAML
+Plug 'avakhov/vim-yaml'
 
 " Add plugins to &runtimepath
 call plug#end()
