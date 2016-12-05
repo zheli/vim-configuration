@@ -17,6 +17,14 @@ Plug 'Suave/vim-colors-guardian'
 Plug 'scrooloose/nerdtree'
 " Syntax Check
 Plug 'neomake/neomake'
+" Choose window like tmux
+Plug 'https://github.com/t9md/vim-choosewin.git'
+" numbers.vim is a plugin for intelligently toggling line numbers
+Plug 'myusuf3/numbers.vim'
+" toggle list with shortcuts
+Plug 'milkypostman/vim-togglelist'
+" Fugitive for Git commands
+Plug 'https://github.com/tpope/vim-fugitive.git'
 
 " ==Function===
 " Fuzzy file opener
@@ -26,6 +34,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
+Plug 'https://github.com/godlygeek/tabular.git' " make text into column
 " Code Completion
 Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
 " numbers.vim is a plugin for intelligently toggling line numbers
