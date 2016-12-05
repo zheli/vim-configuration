@@ -103,6 +103,14 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 " Switch between absolute and relative line number
 nnoremap <F3> :NumbersToggle<CR>
+" Start choosewin
+nmap - <Plug>(choosewin)
+" Gstatus toggle
+nmap <F6> :ToggleGStatus<CR>
+"}
+
+"Choosewin {
+let g:choosewin_overlay_enable = 1
 "}
 
 " CtrlP {
