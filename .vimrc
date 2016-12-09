@@ -37,6 +37,8 @@ Plug 'tpope/vim-unimpaired'
 Plug 'https://github.com/godlygeek/tabular.git' " make text into column
 " Code Completion
 Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
+" save sessions
+Plug 'https://github.com/tpope/vim-obsession.git'
 
 " Filetypes
 "
