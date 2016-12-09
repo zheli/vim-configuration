@@ -51,8 +51,8 @@ call plug#end()
 " Interface
 syntax enable " enable syntax support
 color sorcerer
+set wildmode=longest,list,full " set <tab> completion behavior
 set wildmenu " show autocomplete options
-set wildmode=longest:full,full " set <tab> completion behavior
 set number " enable line number
 set hlsearch " highlight all search matches
 
