@@ -154,7 +154,7 @@ filetype on " enable filetype detect
 set wildignore=*.o,*~,*.pyc
 
 " file type specfic format {
-autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType sh,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 " }
 
 " Neomake {
