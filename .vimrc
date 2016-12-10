@@ -159,7 +159,7 @@ autocmd FileType sh,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 " Neomake {
 autocmd! BufWritePost * Neomake " run Neomake syntax check on the current file on every write
-let g:neomake_open_list=1       " open quickfix or list window when there is error
+let g:neomake_open_list=2       " open quickfix or list window when there is error
 " }
 " Helper functions {
 
