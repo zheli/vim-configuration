@@ -116,6 +116,8 @@ nnoremap <F3> :NumbersToggle<CR>
 nmap - <Plug>(choosewin)
 " Gstatus toggle
 nmap <F6> :ToggleGStatus<CR>
+" search current word
+nnoremap <Leader>s :%s/\<<C-r><-C-w>\>/
 "}
 
 "Choosewin {
