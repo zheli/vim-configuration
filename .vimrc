@@ -61,6 +61,7 @@ set wildmode=longest,list,full " set <tab> completion behavior
 set wildmenu " show autocomplete options
 set number " enable line number
 set hlsearch " highlight all search matches
+set showcmd             " Show (partial) command in status line.
 
 "wrap line that is longer than 100
 set wrap
@@ -168,7 +169,9 @@ function! ToggleGStatus()
         Gstatus
     endif
 endfunction
-command ToggleGStatus :call ToggleGStatus()
+if !exists(':ToggleGStatus')
+	command ToggleGStatus :call ToggleGStatus()
+endif
 
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
