@@ -35,6 +35,12 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'https://github.com/godlygeek/tabular.git' " make text into column
+Plug 'ervandew/supertab' " so YouComplete me and use <tab> with ultisnip
+" http://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme
+"Code snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'zheli/zhe-ultisnips-snippets'
 " Code Completion
 Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
 " save sessions
@@ -124,9 +130,15 @@ let g:ctrlp_custom_ignore = {
   \ } " ignore node_modules and artifact folders, image files
 let g:ctrlp_show_hidden = 1 " show hidden files
 " }
-" YouCompleteMe {
-let g:ycm_key_list_select_completion = ['<C-j>']
-let g:ycm_key_list_previous_completion = ['<C-k>']
+" make YCM compatible with UltiSnips (using supertab) {
+let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-j>'
+" }
+" better key bindings for UltiSnipsExpandTrigger {
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<C-j>"
+let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
 " }
 
 " }
