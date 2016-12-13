@@ -156,7 +156,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
 " FileType {
 
 filetype on " enable filetype detect
-filetype indent plugin on 
+filetype indent plugin on
 
 " ignore list
 set wildignore=*.o,*~,*.pyc
