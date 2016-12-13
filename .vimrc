@@ -125,6 +125,8 @@ nmap <F6> :ToggleGStatus<CR>
 nnoremap <Leader>s :%s/\<<C-r><-C-w>\>/
 " search current word inside git repo
 nnoremap <leader>gr :Ggr <cword><CR>
+" make Ggrep run silently so we don't need to type extra enter
+command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
 "}
 
 "Choosewin {
