@@ -118,6 +118,8 @@ nmap - <Plug>(choosewin)
 nmap <F6> :ToggleGStatus<CR>
 " search current word
 nnoremap <Leader>s :%s/\<<C-r><-C-w>\>/
+" search current word inside git repo
+nnoremap <leader>gr :Ggr <cword><CR>
 "}
 
 "Choosewin {
