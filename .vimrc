@@ -62,6 +62,11 @@ set wildmenu " show autocomplete options
 set number " enable line number
 set hlsearch " highlight all search matches
 set showcmd             " Show (partial) command in status line.
+set tabstop=4 " show existing tab with 4 spaces width
+set softtabstop=4 " fill in the indentation gaps with 4 spaces
+set shiftwidth=4 " when indenting with '>', use 4 spaces width
+set expandtab " On pressing tab, insert 4 spaces
+set autoindent
 
 "wrap line that is longer than 100
 set wrap
@@ -151,6 +156,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
 " FileType {
 
 filetype on " enable filetype detect
+filetype indent plugin on 
 
 " ignore list
 set wildignore=*.o,*~,*.pyc
