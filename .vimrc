@@ -24,7 +24,9 @@ Plug 'myusuf3/numbers.vim'
 " toggle list with shortcuts
 Plug 'milkypostman/vim-togglelist'
 " Fugitive for Git commands
-Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'tpope/vim-fugitive'
+" Show git diff in vim
+Plug 'airblade/vim-gitgutter'
 
 " ==Function===
 " Fuzzy file opener
