@@ -148,6 +148,7 @@ let g:ctrlp_show_hidden = 1 " show hidden files
 let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-j>'
+let g:ycm_server_python_interpreter = '/usr/bin/env python'
 " }
 " better key bindings for UltiSnipsExpandTrigger {
 let g:UltiSnipsExpandTrigger = "<tab>"
