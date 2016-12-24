@@ -72,11 +72,8 @@ set shiftwidth=4 " when indenting with '>', use 4 spaces width
 set expandtab " On pressing tab, insert 4 spaces
 set autoindent
 
-"wrap line that is longer than 100
-set wrap
-set textwidth=100
-
-set colorcolumn=+1 "color text when length is over 100
+set textwidth=100 "wrap line that is longer than 100
+set colorcolumn=100 "color text when length is over 100
 
 "highlight trailing whitespace
 :hi ExtraWhitespace ctermbg=red guibg=red
