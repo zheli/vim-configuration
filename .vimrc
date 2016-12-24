@@ -27,6 +27,8 @@ Plug 'milkypostman/vim-togglelist'
 Plug 'tpope/vim-fugitive'
 " Show git diff in vim
 Plug 'airblade/vim-gitgutter'
+" Tagbar
+Plug 'majutsushi/tagbar'
 
 " ==Function===
 " Fuzzy file opener
