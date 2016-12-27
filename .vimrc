@@ -57,6 +57,14 @@ Plug 'sjl/gundo.vim'
 
 " Filetypes
 "
+" Dockerfile
+Plug 'ekalinin/Dockerfile.vim'
+" Elixir
+Plug 'elixir-lang/vim-elixir'
+" JSON
+Plug 'elzr/vim-json'
+" Terraform
+Plug 'hashivim/vim-terraform'
 "  YAML
 Plug 'avakhov/vim-yaml'
 
