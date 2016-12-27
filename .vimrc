@@ -53,7 +53,9 @@ Plug 'https://github.com/tpope/vim-obsession.git'
 Plug 'albfan/ag.vim'
 Plug 'Chun-Yang/vim-action-ag'
 " Undo tree
-Plug 'sjl/gundo.vim'
+Plug 'mbbill/undotree'
+" python-mode for Python
+Plug 'https://github.com/klen/python-mode.git'
 
 " Filetypes
 "
@@ -133,6 +135,8 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 nnoremap <F3> :NumbersToggle<CR>
 " Start choosewin
 nmap - <Plug>(choosewin)
+" undo tree
+nnoremap <F5> :UndotreeToggle<CR>
 " Gstatus toggle
 nmap <F6> :ToggleGStatus<CR>
 " search current word
@@ -156,6 +160,16 @@ let g:ctrlp_custom_ignore = {
   \ } " ignore node_modules and artifact folders, image files
 let g:ctrlp_show_hidden = 1 " show hidden files
 " }
+
+" Undo tree {
+" set persistent_undo
+let g:undotree_WindowLayout=4 " undo tree layout https://github.com/mbbill/undotree/blob/master/plugin/undotree.vim#L15
+if has("persistent_undo")
+    set undodir=~/.undodir/
+    set undofile
+endif
+" }
+
 " make YCM compatible with UltiSnips (using supertab) {
 let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
