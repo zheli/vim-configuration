@@ -47,8 +47,13 @@ Plug 'honza/vim-snippets'
 Plug 'zheli/zhe-ultisnips-snippets'
 " Code Completion
 Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
-" save sessions
+" Save sessions
 Plug 'https://github.com/tpope/vim-obsession.git'
+"Ag search
+Plug 'albfan/ag.vim'
+Plug 'Chun-Yang/vim-action-ag'
+" Undo tree
+Plug 'sjl/gundo.vim'
 
 " Filetypes
 "
