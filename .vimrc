@@ -108,8 +108,12 @@ let g:airline_theme='papercolor'
 silent! nmap <C-e> :NERDTreeToggle<CR> " Nerdtree hotkeys
 let NERDTreeIgnore = ['\.pyc$'] " ignore pyc files
 let NERDTreeShowHidden=1 " Show hidden files
-let g:NERDTreeUpdateOnWrite = 0 " issue: https://github.com/Xuyuanp/nerdtree-git-plugin/issues/4
 let NERDTreeQuitOnOpen=1 "auto close nerdtree
+let g:NERDTreeUpdateOnWrite = 0 " issue: https://github.com/Xuyuanp/nerdtree-git-plugin/issues/4
+" }
+" Tagbar {
+let g:tagbar_autofocus = 1 " focus on tagbar window automatically
+let g:tagbar_autoclose = 1
 " }
 
 " Editing {
