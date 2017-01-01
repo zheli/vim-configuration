@@ -201,7 +201,11 @@ filetype indent plugin on
 set wildignore=*.o,*~,*.pyc
 
 " file type specfic format {
-autocmd FileType sh,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType scss setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType sh setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 " }
 
 " Neomake {
