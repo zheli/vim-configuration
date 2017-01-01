@@ -59,6 +59,8 @@ Plug 'https://github.com/klen/python-mode.git'
 
 " Filetypes
 "
+" Angular
+Plug 'burnettk/vim-angular'
 " Dockerfile
 Plug 'ekalinin/Dockerfile.vim'
 " Elixir
