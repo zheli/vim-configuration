@@ -241,22 +241,34 @@ endfun
 " Close all open buffers on entering a window if the only
 " buffer that's left is the NERDTree buffer
 function! s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
+    if exists("t:NERDTreeBufName")
+        if bufwinnr(t:NERDTreeBufName) != -1
+            if winnr("$") == 1
+                q
+            endif
+        endif
     endif
-  endif
 endfunction
 
+" Stupid shift key fixes
+if has("user_commands")
+    command! -bang -nargs=* -complete=file W w<bang> <args>
+    command! -bang -nargs=* -complete=file Wq wq<bang> <args>
+    command! -bang -nargs=* -complete=file WQ wq<bang> <args>
+    command! -bang -nargs=* -complete=file Edit edit<bang> <args>
+    command! -bang Wa wa<bang>
+    command! -bang WA wa<bang>
+    command! -bang Q q<bang>
+    command! -bang QA qa<bang>
+    command! -bang Qa qa<bang>
+endif
 
 augroup vimrc_autocmd
-  autocmd!
-  " auto remove trailling whitespace on save
-  autocmd filetype c,cpp,java,php,ruby,python,php,vimrc,javascript autocmd bufwritepre <buffer> :call <sid>StripTrailingWhitespaces()
-  " auto close when only nerdtree is left
-  autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+    autocmd!
+    " auto remove trailling whitespace on save
+    autocmd filetype c,cpp,java,php,ruby,python,php,vimrc,javascript autocmd bufwritepre <buffer> :call <sid>StripTrailingWhitespaces()
+    " auto close when only nerdtree is left
+    autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 augroup end
 " }
 
