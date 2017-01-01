@@ -145,6 +145,8 @@ nmap - <Plug>(choosewin)
 nnoremap <F5> :UndotreeToggle<CR>
 " Gstatus toggle
 nmap <F6> :ToggleGStatus<CR>
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
 " search current word
 nnoremap <Leader>s :%s/\<<C-r><-C-w>\>/
 " search current word inside git repo
@@ -205,6 +207,15 @@ autocmd FileType sh,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 " Neomake {
 autocmd! BufWritePost * Neomake " run Neomake syntax check on the current file on every write
 let g:neomake_open_list=2       " open quickfix or list window when there is error
+let g:neomake_python_enabled_makers = ['python', 'pylama', 'mypy']
+
+" }
+
+" pymode {
+let g:pymode_lint=0
+let g:pymode_rope=1
+let g:pymode_options_max_line_length=100
+let g:pymode_lint_options_pep8 = {'max_line_length': g:pymode_options_max_line_length}
 " }
 " Helper functions {
 
