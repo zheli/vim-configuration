@@ -122,7 +122,10 @@ let g:tagbar_autoclose = 1
 
 " Editing {
 
-set smartcase " case insentive search if first letter is not capital
+" doesn't work it seems
+"set smartcase " case insentive search if first letter is not capital
+set ignorecase " case insensitive search
+set spell " enable spelling check
 
 " Shortcut keys {
 " Moving lines up and down with Alt-j and Alt-k
