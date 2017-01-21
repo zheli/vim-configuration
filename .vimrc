@@ -160,6 +160,16 @@ nnoremap <Leader>s :%s/\<<C-r><-C-w>\>/
 nnoremap <leader>gr :Ggr <cword><CR>
 " make Ggrep run silently so we don't need to type extra enter
 command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
+" Ag search
+" use * to search current word in normal mode
+nmap * <Plug>AgActionWord
+" " use * to search selected text in visual mode
+vmap * <Plug>AgActionVisual"
+" tabs
+" last tab
+nnoremap tl  :tablast<CR>
+" close tab
+nnoremap td  :tabclose<CR>
 "}
 
 "Choosewin {
