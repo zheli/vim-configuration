@@ -177,12 +177,12 @@ let g:choosewin_overlay_enable = 1
 "}
 
 " CtrlP {
-let g:ctrlp_cmd = 'CtrlP' " use CtrlP mode
+let g:ctrlp_cmd = 'CtrlPMixed' " use CtrlP mode
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/](node_modules|artifact)$',
-  \ 'file': '\.png$',
-  \ } " ignore node_modules and artifact folders, image files
+            \ 'dir': '\v[\/](node_modules|artifact|bower_components|dist|.git|.tmp)$',
+            \ 'file': '\.(png|swp)$',
+            \ } " ignore node_modules and artifact folders, image files
 let g:ctrlp_show_hidden = 1 " show hidden files
 " }
 
