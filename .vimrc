@@ -63,8 +63,12 @@ Plug 'https://github.com/klen/python-mode.git'
 Plug 'burnettk/vim-angular'
 " Dockerfile
 Plug 'ekalinin/Dockerfile.vim'
+" Go
+Plug 'fatih/vim-go'
 " Elixir
 Plug 'elixir-lang/vim-elixir'
+" JavaScript
+Plug 'othree/javascript-libraries-syntax.vim'
 " JSON
 Plug 'elzr/vim-json'
 " Terraform
