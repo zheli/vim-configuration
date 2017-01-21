@@ -228,6 +228,7 @@ let g:pymode_rope=1
 let g:pymode_options_max_line_length=100
 let g:pymode_lint_options_pep8 = {'max_line_length': g:pymode_options_max_line_length}
 " }
+
 " Helper functions {
 
 " New Command ToggleGstatus for switching Gstatus window on/off
@@ -239,7 +240,7 @@ function! ToggleGStatus()
     endif
 endfunction
 if !exists(':ToggleGStatus')
-	command ToggleGStatus :call ToggleGStatus()
+    command ToggleGStatus :call ToggleGStatus()
 endif
 
 fun! <SID>StripTrailingWhitespaces()
