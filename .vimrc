@@ -83,6 +83,7 @@ call plug#end()
 
 " Interface
 syntax enable " enable syntax support
+set background=dark
 color sorcerer
 set wildmode=longest,list,full " set <tab> completion behavior
 set wildmenu " show autocomplete options
@@ -128,6 +129,7 @@ let g:tagbar_autoclose = 1
 "set smartcase " case insentive search if first letter is not capital
 set ignorecase " case insensitive search
 set spell " enable spelling check
+set backspace=indent,eol,start
 
 " Shortcut keys {
 " Moving lines up and down with Alt-j and Alt-k
