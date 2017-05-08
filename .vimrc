@@ -25,6 +25,8 @@ Plug 'myusuf3/numbers.vim'
 Plug 'milkypostman/vim-togglelist'
 " Fugitive for Git commands
 Plug 'tpope/vim-fugitive'
+" Git commit browser
+Plug 'junegunn/gv.vim'
 " Show git diff in vim
 Plug 'airblade/vim-gitgutter'
 " Tagbar
