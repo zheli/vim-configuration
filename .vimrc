@@ -6,7 +6,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Colors
 Plug 'adlawson/vim-sorcerer'
-Plug 'altercation/vim-colors-solarized'
+Plug 'lifepillar/vim-solarized8'
 Plug 'antlypls/vim-colors-codeschool'
 Plug 'easysid/mod8.vim'
 Plug 'freeo/vim-kalisi'
@@ -84,7 +84,7 @@ call plug#end()
 " Interface
 syntax enable " enable syntax support
 set background=dark
-color sorcerer
+color solarized8
 set wildmode=longest,list,full " set <tab> completion behavior
 set wildmenu " show autocomplete options
 set number " enable line number
